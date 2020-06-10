@@ -24,6 +24,7 @@
 use Cake\Http\Middleware\CsrfProtectionMiddleware;
 use Cake\Routing\Route\DashedRoute;
 use Cake\Routing\RouteBuilder;
+use Cake\Routing\Router;
 
 /*
  * The default class to use for all routes
@@ -96,3 +97,11 @@ $routes->scope('/', function (RouteBuilder $builder) {
  * });
  * ```
  */
+
+Router::prefix('Admin', function (RouteBuilder $routes) {
+    // All routes here will be prefixed with `/admin`, and
+    // have the `'prefix' => 'Admin'` route element added that
+    // will be required when generating URLs for these routes
+    $routes->fallbacks(DashedRoute::class);
+    $routes->connect('/', ['controller' => 'Users', 'action' => 'index']);
+});

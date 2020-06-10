@@ -1,0 +1,7 @@
+SQL da Base de Dados na raiz do projeto "cakephp4teste1.sql"
+
+Criando MVC de ROLES
+bin/cake bake all roles
+
+Criando MVC de USERS
+bin/cake bake all users

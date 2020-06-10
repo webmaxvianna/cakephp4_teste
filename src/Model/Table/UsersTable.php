@@ -88,6 +88,15 @@ class UsersTable extends Table
             ->requirePresence('password', 'create')
             ->notEmptyString('password');
 
+        $validator
+            ->add(
+                'confirm_password',
+                'no-misspelling', [
+                    'rule' => ['compareWith', 'password'],
+                    'message' => 'Passwords are not equal',
+                ]
+            );
+
         return $validator;
     }
 

@@ -21,6 +21,7 @@
                     echo $this->Form->control('username');
                     echo $this->Form->control('email');
                     echo $this->Form->control('password');
+                    echo $this->Form->control('confirm_password', ['type' => 'password']);
                     echo $this->Form->control('role_id', ['options' => $roles]);
                 ?>
             </fieldset>

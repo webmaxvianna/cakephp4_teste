@@ -5,3 +5,7 @@ bin/cake bake all roles
 
 Criando MVC de USERS
 bin/cake bake all users
+
+Incluindo campo Confirm Password na View (users/add)
+Cookbook
+https://book.cakephp.org/4/en/orm/validation.html#validation-vs-application-rules  

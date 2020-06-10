@@ -8,4 +8,8 @@ bin/cake bake all users
 
 Incluindo campo Confirm Password na View (users/add)
 Cookbook
-https://book.cakephp.org/4/en/orm/validation.html#validation-vs-application-rules  
+https://book.cakephp.org/4/en/orm/validation.html#validation-vs-application-rules 
+
+Deletando dados de tabelas relacionadas
+Cookbook
+https://book.cakephp.org/4/en/orm/deleting-data.html#cascading-deletes

@@ -13,3 +13,15 @@ https://book.cakephp.org/4/en/orm/validation.html#validation-vs-application-rule
 Deletando dados de tabelas relacionadas
 Cookbook
 https://book.cakephp.org/4/en/orm/deleting-data.html#cascading-deletes
+
+Criando Controller Admin Users
+bin/cake bake controller --prefix admin users
+
+Criando Views Admin Users
+bin/cake bake template --prefix admin users
+
+Criando Controller Admin Roles
+bin/cake bake controller --prefix admin roles
+
+Criando Views Admin Roles
+bin/cake bake template --prefix admin roles

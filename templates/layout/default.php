@@ -44,14 +44,14 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </div>
         <div class="top-nav-links">
             <?php  
-                if ($userLogged) {
+                if (isset($userLogged)) {
                     echo 'Hello, ' . $userLogged['name'] . "!";
                 }
             ?>
             <a target="_blank" href="https://book.cakephp.org/4/">Documentation</a>
             <a target="_blank" href="https://api.cakephp.org/4/">API</a>
-            <?php if ($userLogged): ?>
-                <a target="_blank" href="<?= $this->Url->build(['controller' => 'users' , 'action' => 'logout']) ?>">Logout</a>
+            <?php if (isset($userLogged)): ?>
+                <a href="<?= $this->Url->build(['controller' => 'users' , 'action' => 'logout']) ?>">Logout</a>
             <?php endif; ?>
         </div>
     </nav>

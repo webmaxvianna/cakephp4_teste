@@ -213,3 +213,5 @@ ServerRequest::addDetector('tablet', function ($request) {
 //Inflector::rules('irregular', ['red' => 'redlings']);
 //Inflector::rules('uninflected', ['dontinflectme']);
 //Inflector::rules('transliteration', ['/å/' => 'aa']);
+
+Cake\I18n\FrozenTime::setToStringFormat('dd/MM/yyyy - hh:mm:ss');

@@ -21,6 +21,7 @@ class AppController extends Controller
                         'username' => 'username', 
                         'password' => 'password'
                         ]
+                    ]
                 ],
                 'loginRedirect' => [
                     'controller' => 'Users',
@@ -30,8 +31,8 @@ class AppController extends Controller
                     'controller' => 'Users',
                     'action' => 'login'
                 ]
-            ]
-        ]);
+            ]);
 
+        $this->Auth->allow('add');
     }
 }

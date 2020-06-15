@@ -36,5 +36,12 @@ class AppController extends Controller
         $this->Auth->allow('add');
 
         $this->set('userLogged', $this->Auth->user());
+
+        if ($this->Auth->user()) {
+            $this->loadModel('Roles');
+            $userRole = $this->Roles->get($this->Auth->user('role_id'));
+            $this->set('userRole' , $userRole);
+        }        
+        
     }
 }

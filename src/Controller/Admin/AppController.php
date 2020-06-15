@@ -34,5 +34,7 @@ class AppController extends Controller
             ]);
 
         $this->Auth->allow('add');
+
+        $this->set('userLogged', $this->Auth->user());
     }
 }
